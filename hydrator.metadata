@@ -1,0 +1,7 @@
+{
+  "repoURL": "https://github.com/grkml/devops-testing.git",
+  "drySha": "a86729f183a50b5c1cde249162594d5d68578fbf",
+  "author": "Git User <noreply@gituser.com>",
+  "date": "2026-03-16T17:23:55Z",
+  "subject": "Fix: add required syncSource.path for source hydrator"
+}

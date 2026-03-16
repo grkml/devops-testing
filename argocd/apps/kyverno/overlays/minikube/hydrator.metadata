@@ -1,0 +1,7 @@
+{
+  "repoURL": "https://github.com/grkml/devops-testing.git",
+  "drySha": "a86729f183a50b5c1cde249162594d5d68578fbf",
+  "commands": [
+    "kustomize build ./argocd/apps/kyverno/overlays/minikube --enable-helm"
+  ]
+}
