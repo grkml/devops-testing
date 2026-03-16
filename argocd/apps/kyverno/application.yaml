@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kyverno
+  namespace: argocd
+spec:
+  project: default
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/grkml/devops-testing.git
+      targetRevision: main
+      path: argocd/apps/kyverno/overlays/minikube
+    syncSource:
+      targetBranch: argocd-sync/minikube
+    hydrateTo:
+      targetBranch: argocd-staging/minikube
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kyverno
