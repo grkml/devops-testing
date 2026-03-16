@@ -12,6 +12,7 @@ spec:
       path: argocd/apps/kyverno/overlays/minikube
     syncSource:
       targetBranch: argocd-sync/minikube
+      path: argocd/apps/kyverno/overlays/minikube
     hydrateTo:
       targetBranch: argocd-staging/minikube
   destination:
